@@ -1,12 +1,6 @@
 import React from 'react'
-import Navbar from './components/navbar'
-
+import Home from './Home/page'
 export default function Page() {
-  return (
-    <div>
-      <div></div>
-
-    </div>
-  )
+  return <Home/>
 }
 

@@ -1,8 +1,19 @@
-import { Geist, Geist_Mono, Poppins } from "next/font/google";
+import { Geist, Geist_Mono, Poppins, Lato, Quicksand } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
+import Navbar from "./components/layouts/navbar";
+import Footer from "./components/layouts/footer";
 
+const quicksand = Quicksand({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-quicksand",
+})
+
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "700", "900"],
+  variable: "--font-lato",
+})
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -29,7 +40,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable}  antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${lato.variable} ${quicksand.variable} antialiased`}
       >
         <Navbar></Navbar>
         {children}

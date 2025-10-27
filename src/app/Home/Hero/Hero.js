@@ -7,7 +7,7 @@ export default function Hero() {
     { text: "Make your Breakfast Healthy and Easy", background: "bg-[url('/material-photos/Home/Hero/banner-2.svg')]" },
     { text: "The best Organic Products Online", background: "bg-[url('/material-photos/Home/Hero/banner-3.svg')]" }]
     return (
-        <div className="flex justify-center gap-5 min-sm:max-xl:flex-wrap">
+        <div className="flex justify-center gap-5 min-sm:max-xl:flex-wrap  min-sm:max-xl:justify-center">
             {/* hero container */}
             {herobanner.map((herocard, index) => (<div key={index} className={`${herocard.background} bg-contain bg-no-repeat bg-center flex flex-col justify-center  w-[450px] h-[300px] rounded-[10px] `}>
                 {/* hero card banner */}

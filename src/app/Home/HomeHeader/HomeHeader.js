@@ -45,7 +45,7 @@ export default function Homeheader() {
             </div>
             <div className="flex flex-col w-[60%] " >
                 {/* right container - tag and images */}
-                <div className="h-[50%] flex gap-[17px] w-full items-center min-sm:max-xl:flex-wrap">
+                <div className="h-[50%] flex gap-[17px] w-full items-center min-sm:max-xl:flex-wrap  min-sm:max-xl:justify-center">
                     {/* upper section of the right container - tags */}
                     {tag.map((tagcontent, index) => (
                         <div key={index} className="relative group overflow-hidden w-fit cursor-pointer h-[46px] flex gap-[10px] items-center rounded-[30px] border-[1px] hover:border-black/20 border-[#ECECEC] bg-white shadow-[5px_5px_15px_0px_#0000000D]">

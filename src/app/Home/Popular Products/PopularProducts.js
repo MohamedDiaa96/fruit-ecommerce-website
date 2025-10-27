@@ -15,11 +15,9 @@ export default function () {
 
 
     return (
-        <div>
-            {/* Popular Products section container */}
             <div className="mx-16 flex flex-col gap-[43px]">
-                {/* popular products section */}
-                <div className="flex justify-between min-sm:max-xl:flex-wrap min-sm:max-xl:flex-col min-sm:max-xl:gap-10">
+                {/* Popular Products section container */}
+                <div className="flex justify-between min-sm:max-xl:items-center min-sm:max-xl:flex-wrap min-sm:max-xl:flex-col min-sm:max-xl:gap-10">
                     {/* title - filter Categories */}
                     <div>
                         {/* title */}
@@ -30,9 +28,9 @@ export default function () {
                         {filtercategories.map((filter, index) => (<button key={index} className="min-sm:max-xl:fit font-semibold text-base leading-4 tracking-normal text-center align-middle font-quicksand text-[#253D4E] cursor-pointer transition-all duration-300 hover:text-[#3BB77E]">{filter.filtercateg}</button>))}
                     </div>
                 </div>
-                <div className="flex gap-[24px] flex-wrap w-360 min-sm:max-xl:w-fit">
+                <div className="flex gap-[24px] flex-wrap w-360 min-sm:max-xl:w-fit  min-sm:max-xl:justify-center">
                     {/* home popular products container */}
-                    {productdata.map((product)=>(<ProductCardUI 
+                    {productdata.slice(0,10).map((product)=>(<ProductCardUI 
                     cardtype={"A"}
                     key={product.id}
                     id={product.id}
@@ -48,7 +46,5 @@ export default function () {
                     />)) }
                 </div>
             </div>
-
-        </div>
     )
 }

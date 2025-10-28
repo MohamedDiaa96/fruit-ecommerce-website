@@ -36,11 +36,11 @@ export default function () {
                     id={product.id}
                     tag={product.tag}
                     img={product.img}
-                    sort={product.sort}
+                    category={product.category}
                     title={product.title}
                     star={product.star}
                     ratingnumber={product.ratingnumber}
-                    manufactorer={product.manufacturer}
+                    manufacturer={product.manufacturer}
                     discountedprice={product.discountedprice}
                     originalprice={product.originalprice}
                     />)) }

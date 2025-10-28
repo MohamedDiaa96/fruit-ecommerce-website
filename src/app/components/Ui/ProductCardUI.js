@@ -4,7 +4,7 @@ import React from 'react'
 import { productdata } from '../data/ProductData'
 import ButtonUI from "./ButtonUI"
 
-export default function ProductCardUI({ cardtype, id, tag, img, sort, title, star, ratingnumber, manufacturer, discountedprice, originalprice, solditemsvalue }) {
+export default function ProductCardUI({ cardtype, id, tag, img, category, title, star, ratingnumber, manufacturer, discountedprice, originalprice, solditemsvalue }) {
   return (
     <> {cardtype === "A" ?
       <Link href={`/Products/${id}`} className=" w-[265px] h-[475.3800048828125px] flex flex-col border-[1px] border-[#ECECEC] rounded-[15px]">
@@ -15,13 +15,13 @@ export default function ProductCardUI({ cardtype, id, tag, img, sort, title, sta
         </div>
         <div>
           {/* image */}
-          <Image src={img} width={246} height={246} alt="fruit"></Image>
+          <Image src={img} width={246} height={246} alt={title}></Image>
         </div>
         <div className="mx-5">
           {/* card middle content container */}
           <div>
-            {/* sort */}
-            <p className="font-normal text-xs leading-6 tracking-normal align-middle font-lato text-[#ADADAD]">{sort}</p>
+            {/* category */}
+            <p className="font-normal text-xs leading-6 tracking-normal align-middle font-lato text-[#ADADAD]">{category}</p>
           </div>
           <div>
             {/* Title */}
@@ -31,7 +31,7 @@ export default function ProductCardUI({ cardtype, id, tag, img, sort, title, sta
             {/* rating */}
             <div>
               {/* star */}
-              <Image src={star} alt="star" width={57} height={12}></Image>
+              <Image src={star} alt={star} width={57} height={12}></Image>
             </div>
             <div>
               {/* rating number */}
@@ -64,13 +64,13 @@ export default function ProductCardUI({ cardtype, id, tag, img, sort, title, sta
           </div>
           <div>
             {/* image */}
-            <Image src={img} width={246} height={246} alt="fruit"></Image>
+            <Image src={img} width={246} height={246} alt={title}></Image>
           </div>
           <div className="mx-5 flex flex-col gap-2 mb-4">
             {/* card middle details content container */}
             <div>
-              {/* sort */}
-              <p className="font-normal text-xs leading-6 tracking-normal align-middle font-lato text-[#ADADAD]">{sort}</p>
+              {/* category */}
+              <p className="font-normal text-xs leading-6 tracking-normal align-middle font-lato text-[#ADADAD]">{category}</p>
             </div>
             <div>
               {/* Title */}
@@ -78,7 +78,7 @@ export default function ProductCardUI({ cardtype, id, tag, img, sort, title, sta
             </div>
             <div>
               {/* star */}
-              <Image src={star} alt="star" width={57} height={12}></Image>
+              <Image src={star} alt={star} width={57} height={12}></Image>
             </div>
             <div className="flex gap-[10.46px]">
               {/* price */}
@@ -113,7 +113,7 @@ export default function ProductCardUI({ cardtype, id, tag, img, sort, title, sta
                   {/* rating */}
                   <div>
                     {/* star */}
-                    <Image src={star} alt="star" width={57} height={12}></Image>
+                    <Image src={star} alt={star} width={57} height={12}></Image>
                   </div>
                   <div>
                     {/* rating number */}
@@ -143,7 +143,7 @@ export default function ProductCardUI({ cardtype, id, tag, img, sort, title, sta
               {/* Card container */}
               <div className="size-[100px]">
                 {/* image */}
-                <Image src={img} alt="fruit" className="rounded-[15px]" width={110} height={110}></Image>
+                <Image src={img} alt={title} className="rounded-[15px]" width={110} height={110}></Image>
               </div>
               <div className="flex flex-col ml-5">
                 {/* product card details */}
@@ -155,7 +155,7 @@ export default function ProductCardUI({ cardtype, id, tag, img, sort, title, sta
                   {/* rating */}
                   <div>
                     {/* star */}
-                    <Image src={star} alt="star" width={57} height={12}></Image>
+                    <Image src={star} alt={star} width={57} height={12}></Image>
                   </div>
                   <div>
                     {/* rating number */}

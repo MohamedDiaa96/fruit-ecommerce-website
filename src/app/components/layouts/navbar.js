@@ -90,22 +90,21 @@ export default function Navbar() {
     const [selectedcategory, setselectedcategory] = useState("All Categories")
     const [showsearchcategory, setshowsearchcategory] = useState(false)
 
-    const searchhandle = (e) => {
-        const inputvalue = e.target.value.toLowerCase()
-        setsearchterm(inputvalue)
+        useEffect(() => {
+        const inputvalue = searchterm.toLowerCase()
         if (!inputvalue) {
             setfiltereditem([])
             return
         }
         let results = productdata.filter((p) => p.title.toLowerCase().includes(inputvalue))
-        if (selectedcategory !== "All Categories"){
-            results = results.filter((p)=> p.category.toLowerCase() === selectedcategory.toLowerCase())
+        if (selectedcategory !== "All Categories") {
+            results = results.filter((p) => p.category.toLowerCase() === selectedcategory.toLowerCase())
         }
         setfiltereditem(results.slice(0, 6))
-    }
+    },[searchterm,selectedcategory])
     console.log(filtereditem)
     return (
-        <div>
+        <div className="sticky inset-0 bg-white z-60">
             <div className="flex items-center h-[9vh] w-[100%] shadow-[0px_0px_5px_0px] shadow-[#0000003f] min-sm:max-[738px]:gap-10 min-sm:max-xl:flex-wrap min-sm:max-xl:h-[100%] min-sm:max-xl:w-[100%] min-sm:max-xl:items-center min-sm:max-xl:justify-center min-sm:max-xl:flex-col">
                 {/* upper navbar */}
                 <div className="flex items-center h-[10vh] w-[10%] ml-[212px] min-sm:max-xl:ml-0 min-sm:max-xl:w-[100%] min-sm:max-xl:flex-wrap min-sm:max-xl:justify-center">
@@ -176,9 +175,9 @@ export default function Navbar() {
                     {/* middle bottom navbar - search engine */}
                     <div className="flex">
                         <div className="flex flex-col">
-                            <input type="text" onChange={searchhandle} value={searchterm} placeholder={`Search For ${selectedcategory}...`} className="min-sm:max-xl:w-[500px] min-sm:max-xl:placeholder:text-[13px] h-full w-[350px] border-[#64B496] shadow-[#64B496] shadow-[0px_0px_0.5px_0px] placeholder:font-poppins flex placeholder:font-normal placeholder:text-xs placeholder:tracking-normal placeholder:align-middle outline-0 px-5 border-1 rounded-l-[5px]"></input>
-                            {filtereditem.length > 0 && (<div className="bg-white max-h-fit w-fit  origin-top rounded-lg shadow-lg fixed mt-10 border border-[#0000004f] z-30 overflow-y-auto">
-                                {filtereditem.map((p) => (<Link key={p.id}  href={`/Products/${p.id}`} className="hover:bg-[#F53E32] pr-5 gap-2 items-center hover:text-white border border-[#0000004f] flex">
+                            <input type="text" onChange={(e)=>{setsearchterm(e.target.value)}} value={searchterm} placeholder={`Search For ${selectedcategory}...`} className="min-sm:max-xl:w-[500px] min-sm:max-xl:placeholder:text-[13px] h-full w-[350px] border-[#64B496] shadow-[#64B496] shadow-[0px_0px_0.5px_0px] placeholder:font-poppins flex placeholder:font-normal placeholder:text-xs placeholder:tracking-normal placeholder:align-middle outline-0 px-5 border-1 rounded-l-[5px]"></input>
+                            {filtereditem.length > 0 && (<div className="bg-white max-h-fit w-fit  origin-top rounded-lg shadow-lg absolute mt-10 border border-[#0000004f] z-30 overflow-y-auto">
+                                {filtereditem.map((p) => (<Link key={p.id} href={`/Products/${p.id}`} className="hover:bg-[#F53E32] pr-5 gap-2 items-center hover:text-white border border-[#0000004f] flex">
                                     <Image src={p.img} width={40} height={40} alt={p.title} className="rounded-lg "></Image>
                                     <span>{p.title}</span>
                                 </Link>))}

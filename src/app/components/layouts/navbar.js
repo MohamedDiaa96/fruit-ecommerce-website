@@ -104,7 +104,7 @@ export default function Navbar() {
     },[searchterm,selectedcategory])
     console.log(filtereditem)
     return (
-        <div className="sticky inset-0 bg-white z-60">
+        <div>
             <div className="flex items-center h-[9vh] w-[100%] shadow-[0px_0px_5px_0px] shadow-[#0000003f] min-sm:max-[738px]:gap-10 min-sm:max-xl:flex-wrap min-sm:max-xl:h-[100%] min-sm:max-xl:w-[100%] min-sm:max-xl:items-center min-sm:max-xl:justify-center min-sm:max-xl:flex-col">
                 {/* upper navbar */}
                 <div className="flex items-center h-[10vh] w-[10%] ml-[212px] min-sm:max-xl:ml-0 min-sm:max-xl:w-[100%] min-sm:max-xl:flex-wrap min-sm:max-xl:justify-center">

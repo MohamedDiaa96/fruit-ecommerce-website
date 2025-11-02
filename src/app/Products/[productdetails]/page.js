@@ -9,7 +9,13 @@ export default function Productdetails() {
   console.log(productdetails)
   return (
     <div>
-      <span>product tag:<span>{product.tag}</span></span>
+      {/* product details container */}
+      <div>
+        {/* filterUI */}
+      </div>
+      <div>
+
+      </div>
     </div>
   )
 }

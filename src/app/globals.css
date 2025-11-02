@@ -13,7 +13,8 @@
   --font-mono: var(--font-geist-mono);
   --font-poppins: var(--font-poppins);
   --font-lato: var(--font-lato);
-  --font-quicksand: var(--font-quicksand)
+  --font-quicksand: var(--font-quicksand);
+  --font-manrope: var(--font-manrope)
 }
 
 
@@ -25,4 +26,11 @@ body {
 
 .arial{
   font-family: Arial, Helvetica, sans-serif;
+}
+.segoeui{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.swiper {
+  display: flex;
+  justify-content: center;
 }

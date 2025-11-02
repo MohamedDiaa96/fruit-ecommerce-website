@@ -32,7 +32,7 @@ export default function Dailybestsellsproducts() {
                     {/* banner */}
                     <Link className="mx-[49px] mt-[100.5px]" href="/"><ButtonUI buttontype={"B"} text={"Shop Now"} /></Link>
                 </div>
-                <MySlider >
+                <MySlider swipertype={"A"} >
                     {/* product cards container */}
                     {productdata.slice(10,16).map((p) => (<SwiperSlide  key={p.id}>
                         <ProductCardUI cardtype={"B"}

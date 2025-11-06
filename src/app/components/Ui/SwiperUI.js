@@ -36,7 +36,7 @@ function MySlider({ children, swipertype }) {
         navigation={{ clickable: true }} // Enable navigation arrows
         loop={true} // Enable looping
         autoplay={{ delay: 3000 }} // Enable autoplay with a 3-second delay
-        className="w-[64vw] h-[100%] min-sm:max-xl:w-[100%] flex min-sm:max-xl:gap-5 ">
+        className="w-[64vw] h-full min-sm:max-xl:w-[100%] flex min-sm:max-xl:gap-5 ">
         {children}
       </Swiper> : swipertype === "B" ?
         <Swiper
@@ -96,7 +96,7 @@ function MySlider({ children, swipertype }) {
             },
             1164: { // lg
               slidesPerView: 5,
-              spaceBetween: 10,
+              spaceBetween: 0,
 
             },
   

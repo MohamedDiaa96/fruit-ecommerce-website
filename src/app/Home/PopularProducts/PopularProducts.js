@@ -2,7 +2,7 @@ import { productdata } from "@/app/components/data/ProductData"
 import ProductCardUI from "@/app/components/Ui/ProductCardUI"
 import React from "react"
 
-export default function () {
+export default function PopularProducts () {
 
     const filtercategories = [{ filtercateg: "All" },
     { filtercateg: "Milks & Dairies" },

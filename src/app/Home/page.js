@@ -2,7 +2,7 @@
 import React from "react"
 import Homeheader from "./HomeHeader/HomeHeader"
 import Hero from "./Hero/Hero"
-import PopularProducts from "./Popular Products/PopularProducts"
+import PopularProducts from "./PopularProducts/PopularProducts"
 import Dailybestsellsproducts from "./DailyBestSellsProducts/DailyBestSellsProducts"
 import Dealsofthedayproducts from "./DealSoftheDayProducts/DealSoftheDayProducts"
 import Fourproductsections from "./fourproductsections/fourproductsections"

@@ -4,7 +4,7 @@ export const productdata = [
         tag: "Hot",
         img: "/material-photos/ProductImages/popularproduct.svg",
         category: "Snack",
-        title: "Fresh organic villa farm lomon 500gm pack",
+        title: "Fresh organic villa farm lemon 500gm pack",
         star: "/material-photos/Home/Popularproducts/star.svg",
         ratingnumber: "4.0",
         manufacturer: "NestFood",
@@ -12,7 +12,15 @@ export const productdata = [
         originalprice: 32.8,
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
-
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 10,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "Yellow",
+        imglist: ["/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
     },
 
     {
@@ -28,6 +36,15 @@ export const productdata = [
         originalprice: 55.8,
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
+        weight: "200 Grams",
+        weightlist: ["200 Grams", "150 Grams", "100 Grams", "50 Grams"],
+        items: 10,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "",
+        imglist: ["/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
 
     },
 
@@ -44,6 +61,15 @@ export const productdata = [
         originalprice: 52.8,
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
+        weight: "5 Kg",
+        weightlist: ["5 Kg", "2.5 Kg", "1 Kg", "500 Grams"],
+        items: 8,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "",
+        imglist: ["/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
 
     },
 
@@ -60,6 +86,15 @@ export const productdata = [
         originalprice: 19.8,
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
+        weight: "1 Kg",
+        weightlist: ["1 Kg", "2.5 Kg", "5 Kg", "500 Grams"],
+        items: 15,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "Red",
+        imglist: ["/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
 
     },
 
@@ -76,6 +111,15 @@ export const productdata = [
         originalprice: 25.8,
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
+        weight: "200 Grams",
+        weightlist: ["200 Grams", "150 Grams", "100 Grams", "50 Grams"],
+        items: 5,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "Red",
+        imglist: ["/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
 
     },
 
@@ -92,7 +136,15 @@ export const productdata = [
         originalprice: 55.8,
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
-
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 20,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "Red",
+        imglist: ["/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
     },
 
     {
@@ -108,6 +160,15 @@ export const productdata = [
         originalprice: 33.8,
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
+        weight: "400 Grams",
+        weightlist: ["400 Grams", "500 Grams", "250 Grams", "125 Grams"],
+        items: 10,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "",
+        imglist: ["/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
 
     },
 
@@ -124,6 +185,15 @@ export const productdata = [
         originalprice: 37.8,
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 17,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "Yellow",
+        imglist: ["/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
 
     },
 
@@ -140,6 +210,15 @@ export const productdata = [
         originalprice: 25.8,
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 12,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "",
+        imglist: ["/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
 
     },
 
@@ -156,7 +235,15 @@ export const productdata = [
         originalprice: 24.8,
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
-
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 23,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "Yellow",
+        imglist: ["/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
     },
 
     {
@@ -173,6 +260,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 15,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "",
+        imglist: ["/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
 
     },
 
@@ -190,6 +286,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 19,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "Red",
+        imglist: ["/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
 
     },
 
@@ -207,6 +312,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 20,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "",
+        imglist: ["/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
 
     },
 
@@ -224,6 +338,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 10,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "",
+        imglist: ["/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
 
     },
 
@@ -241,6 +364,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 21,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "",
+        imglist: ["/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
 
     },
 
@@ -258,6 +390,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 12,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "",
+        imglist: ["/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
 
     },
 
@@ -275,6 +416,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 13,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "",
+        imglist: ["/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
 
     },
 
@@ -292,6 +442,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 16,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "",
+        imglist: ["/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
 
     },
 
@@ -309,6 +468,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 14,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "",
+        imglist: ["/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
 
     },
 
@@ -326,6 +494,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 12,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "",
+        imglist: ["/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
 
     },
 
@@ -343,6 +520,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 11,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "",
+        imglist: ["/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
 
     },
 
@@ -360,6 +546,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 10,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "",
+        imglist: ["/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
 
     },
 
@@ -377,7 +572,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
-
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 25,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "",
+        imglist: ["/material-photos/ProductImages/topsellingproduct3.svg","/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
     },
 
     {
@@ -394,6 +597,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 8,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "",
+        imglist: ["/material-photos/ProductImages/trendingproduct.svg","/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
 
     },
 
@@ -411,6 +623,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 9,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "",
+        imglist: ["/material-photos/ProductImages/trendingproduct2.svg","/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
 
     },
 
@@ -428,6 +649,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 6,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "",
+        imglist: ["/material-photos/ProductImages/trendingproduct3.svg","/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
 
     },
 
@@ -445,6 +675,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 5,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "",
+        imglist: ["/material-photos/ProductImages/recentlyaddedproduct.svg","/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
 
     },
 
@@ -463,6 +702,15 @@ export const productdata = [
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestar: "/material-photos/Home/ProductPage/bronzestar.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 7,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "Blue",
+        imglist: ["/material-photos/ProductImages/recentlyaddedproduct2.svg","/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
 
     },
 
@@ -480,7 +728,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
-
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 3,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "",
+        imglist: ["/material-photos/ProductImages/recentlyaddedproduct3.svg","/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
     },
 
     {
@@ -497,7 +753,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
-
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 4,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "",
+        imglist: ["/material-photos/ProductImages/topratedproduct.svg","/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
     },
 
     {
@@ -514,7 +778,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
-
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 10,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "",
+        imglist: ["/material-photos/ProductImages/topratedproduct2.svg","/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
     },
 
     {
@@ -531,14 +803,22 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
-
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 14,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "",
+        imglist: ["/material-photos/ProductImages/topratedproduct3.svg","/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
     },
 
     {
         id: 33,
         tag: "",
         img: "/material-photos/ProductImages/productpageproduct.svg",
-        category: "Vegatables",
+        category: "Vegetables",
         title: "Fresh organic villa farm lomon 500gm pack",
         star: "/material-photos/Home/Popularproducts/star.svg",
         ratingnumber: "4.5",
@@ -548,7 +828,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
-
+        weight: "500 Grams",
+        weightlist: ["500 Grams", "250 Grams", "125 Grams", "62.5 Grams"],
+        items: 17,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "",
+        imglist: ["/material-photos/ProductImages/productpageproduct.svg","/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
     },
 
     {
@@ -565,7 +853,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg"],
-
+        weight: "200 Grams",
+        weightlist: ["200 Grams", "150 Grams", "100 Grams", "50 Grams"],
+        items: 1,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        imglist: ["/material-photos/ProductImages/productpageproduct2.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct7.svg","/material-photos/ProductImages/dailybestsellsproduct2.svg", "/material-photos/ProductImages/dailybestsellsproduct4.svg"],
+        color: "",
     },
 
     {
@@ -582,7 +878,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
-
+        weight: "1 Kg",
+        weightlist: ["1 Kg", "2.5 Kg", "5 Kg", "500 Grams"],
+        items: 10,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "Yellow",
+        imglist: ["/material-photos/ProductImages/productpageproduct3.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg","/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
     },
 
     {
@@ -599,7 +903,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar2.svg", "/material-photos/Home/ProductPage/bronzestar2.svg"],
-
+        weight: "5 Kg",
+        weightlist: ["5 Kg", "6 Kg", "7.5 Kg", "10 Kg"],
+        items: 14,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "",
+        imglist: ["/material-photos/ProductImages/productpageproduct4.svg","/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
     },
 
     {
@@ -616,7 +928,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg"],
-
+        weight: "250 Grams",
+        weightlist: ["250 Grams", "200 Grams", "150 Grams", "100 Grams"],
+        items: 10,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "Yellow",
+        imglist: ["/material-photos/ProductImages/productpageproduct5.svg","/material-photos/ProductImages/productpageproduct9.svg",  "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
     },
 
     {
@@ -633,7 +953,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg"],
-
+        weight: "1 Kg",
+        weightlist: ["1 Kg", "2.5 Kg", "5 Kg", "500 Grams"],
+        items: 10,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        color: "",
+        imglist: ["/material-photos/ProductImages/productpageproduct6.svg","/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
     },
 
     {
@@ -650,7 +978,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg"],
-
+        weight: "200 Grams",
+        weightlist: ["200 Grams", "150 Grams", "100 Grams", "50 Grams"],
+        items: 1,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        imglist: ["/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct2.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct9.svg"],
+        color: "Blue",
     },
 
     {
@@ -667,6 +1003,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg"],
+        weight: "200 Grams",
+        weightlist: ["200 Grams", "150 Grams", "100 Grams", "50 Grams"],
+        items: 1,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        imglist: ["/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct2.svg", "/material-photos/ProductImages/productpageproduct9.svg"],
+        color: "Red",
 
     },
 
@@ -684,7 +1029,15 @@ export const productdata = [
         solditemsvalue: "90/120",
         cartbag: "/material-photos/Home/ProductPage/cartbag.svg",
         bronzestars: ["/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg", "/material-photos/Home/ProductPage/bronzestar.svg"],
-
+        weight: "200 Grams",
+        weightlist: ["200 Grams", "150 Grams", "100 Grams", "50 Grams"],
+        items: 1,
+        diettype: "Vegetarian",
+        Speciality: "Gluten Free, Sugar Free",
+        Flavour: "Super Saver Pack",
+        info: "Egg Free, Allergen-Free",
+        imglist: ["/material-photos/ProductImages/productpageproduct9.svg", "/material-photos/ProductImages/productpageproduct5.svg", "/material-photos/ProductImages/productpageproduct7.svg", "/material-photos/ProductImages/productpageproduct8.svg", "/material-photos/ProductImages/productpageproduct2.svg"],
+        color: ""
     },
 ]
 

@@ -73,7 +73,42 @@ function MySlider({ children, swipertype }) {
           autoplay={{ delay: 3000 }} // Enable autoplay with a 3-second delay
           className="w-[85vw] min-[1430px]:w-[86vw] min-sm:max-xl:justify-center flex min-sm:max-xl:gap-15 ">
           {children}
-        </Swiper> : ""} </>
+        </Swiper> : swipertype === "C" ?
+                <Swiper
+          // Configure Swiper to use modules if needed
+          modules={[Navigation, Autoplay]}
+          spaceBetween={0}
+          breakpoints={{
+                        640: { // sm
+              slidesPerView: 2,
+              spaceBetween: 0,
+              centeredSlidesBounds:true,
+            },
+            754: { // sm
+              slidesPerView: 3,
+              spaceBetween: 0,
+
+            },
+            950: { // md
+              slidesPerView: 4,
+              spaceBetween: 0,
+              centeredSlides: false
+            },
+            1164: { // lg
+              slidesPerView: 5,
+              spaceBetween: 10,
+
+            },
+  
+
+          }}
+          slidesPerView={5} // Or adjust as needed
+          navigation={{ clickable: true }} // Enable navigation arrows
+          loop={true} // Enable looping
+          autoplay={{ delay: 3000 }} // Enable autoplay with a 3-second delay
+          className=" w-[31.5vw]  sm:max-xl:w-[33vw] sm:max-[1358px]:w-[35.5vw] sm:max-[754px]:h-[15vw]  sm:max-[768px]:w-[35.5vw] sm:max-xl:justify-center flex sm:max-xl:gap-5 ">
+          {children}
+        </Swiper> : "" } </>
   );
 }
 

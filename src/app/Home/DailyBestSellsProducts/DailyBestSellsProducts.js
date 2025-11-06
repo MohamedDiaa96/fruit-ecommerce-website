@@ -30,7 +30,7 @@ export default function Dailybestsellsproducts() {
                 {/* product cards - banner container */}
                 <div className="bg-[url('/material-photos/Home/Dailybestproducts/Banner.svg')] bg-cover bg-center w-[378.5px] h-[520px] rounded-[15px] flex items-center">
                     {/* banner */}
-                    <Link className="mx-[49px] mt-[100.5px]" href="/"><ButtonUI buttontype={"B"} text={"Shop Now"} /></Link>
+                    <Link className="mx-[49px] mt-[100.5px]" href="/Products"><ButtonUI buttontype={"B"} text={"Shop Now"} /></Link>
                 </div>
                 <MySlider swipertype={"A"} >
                     {/* product cards container */}

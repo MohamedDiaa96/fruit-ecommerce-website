@@ -29,7 +29,7 @@ export default function Homeheader() {
                     <div className="flex w-full gap-4">
                         {/* input - left input */}
                         <Image src="/material-photos/Home/homeheader/inputarrow.svg" alt="inputarrow" width={20} height={20}></Image>
-                        <input type="email" placeholder="Your emaill address" className="placeholder:font-lato"></input>
+                        <input type="email" placeholder="Your emaill address" className="placeholder:font-lato outline-0"></input>
                     </div>
                     <div className="flex">
                         {/* input - right input */}

@@ -1,4 +1,3 @@
-import { productdata } from "@/app/components/data/ProductData"
 import ProductCardUI from "@/app/components/Ui/ProductCardUI"
 import MySlider, { selectedproductorder } from "@/app/components/Ui/SwiperUI"
 import React from 'react'

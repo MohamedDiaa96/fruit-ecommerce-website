@@ -85,7 +85,7 @@ export default function Cart() {
                 <div className="w-full h-20 flex justify-between items-center px-27 ">
                     {/* Link and checkout button */}
                     <Link href="/Products" className="text-[#444444] font-[Segoe_UI] font-normal text-[15px] leading-[20px] tracking-[0.8px] align-middle underline [text-decoration-style:solid]">Continue Shopping</Link>
-                    <Link href="/Checkout" className="relative group overflow-hidden bg-[#F53E32] rounded-[5px] flex items-center justify-center w-[120.33999633789062px] h-[40px] font-manrope font-bold text-[14px] leading-[16.8px] tracking-[0.48px] align-bottom capitalize text-[#FFFFFF]">
+                    <Link href="/Home/Cart/Checkout" className="relative group overflow-hidden bg-[#F53E32] rounded-[5px] flex items-center justify-center w-[120.33999633789062px] h-[40px] font-manrope font-bold text-[14px] leading-[16.8px] tracking-[0.48px] align-bottom capitalize text-[#FFFFFF]">
                         <div className="absolute size-full  group-hover:bg-[#00000060]"></div>
                         <div className="absolute z-20 text-white ">Checkout</div>
                     </Link>

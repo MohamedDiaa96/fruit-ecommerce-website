@@ -1,10 +1,16 @@
-import { Geist, Geist_Mono, Poppins, Lato, Quicksand, Manrope } from "next/font/google";
+import { Geist, Geist_Mono, Poppins, Lato, Quicksand, Manrope, Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/layouts/navbar";
 import Footer from "./components/layouts/footer";
 import { CartProvider } from "@/context/cartcontext";
 import { Toaster } from "react-hot-toast";
 import { FilterProvider } from "@/context/filtercontext";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900",],
+  variable: "--font-montserrat",
+})
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -50,13 +56,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${lato.variable} ${quicksand.variable} ${manrope.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${lato.variable} ${quicksand.variable} ${manrope.variable} ${montserrat.variable} antialiased`}
       >
         <Navbar></Navbar>
         <CartProvider>
           <FilterProvider>
-          <Toaster position="top-right" reverseOrder={false} />
-          {children}
+            <Toaster position="top-right" reverseOrder={false} />
+            {children}
           </FilterProvider>
         </CartProvider>
         <Footer></Footer>

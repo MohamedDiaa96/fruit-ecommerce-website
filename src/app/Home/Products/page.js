@@ -1,5 +1,5 @@
-import FilterUI from "../components/Ui/FilterUI";
-import OrangeBannerUI from "../components/Ui/OrangeBannerUI";
+import FilterUI from "../../components/Ui/FilterUI";
+import OrangeBannerUI from "../../components/Ui/OrangeBannerUI";
 import ShopCards from "./ShopCards/ShopCards";
 
 export default function Products() {

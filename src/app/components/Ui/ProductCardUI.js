@@ -10,12 +10,12 @@ export default function ProductCardUI({ cardtype, id, tag, img, category, title,
   const { addtocart } = useContext(CartContext)
 
 const handleaddtocart = ()=>{
-  addtocart({id,img,title,discountedprice})
+  addtocart({id,img,title,discountedprice,bronzestars,originalprice})
 }
 
   return (
     <> {cardtype === "A" ?
-      <Link href={`/Products/${id}`} className=" w-[265px] h-[475.3800048828125px] flex flex-col border border-[#ECECEC] rounded-[15px]">
+      <Link href={`/Home/Products/${id}`} className=" w-[265px] h-[475.3800048828125px] flex flex-col border border-[#ECECEC] rounded-[15px]">
         {/* Card container */}
         <div className="flex">
           {/* card tag */}
@@ -64,7 +64,7 @@ const handleaddtocart = ()=>{
           </div>
         </div>
       </Link> : cardtype === "B" ?
-        <Link href={`/Products/${id}`} className="w-[225px] h-full rounded-[15px] mb-4 flex flex-col border border-[#ECECEC] ">
+        <Link href={`/Home/Products/${id}`} className="w-[225px] h-full rounded-[15px] mb-4 flex flex-col border border-[#ECECEC] ">
           {/* Card container */}
           <div className="flex">
             {/* card tag */}
@@ -107,7 +107,7 @@ const handleaddtocart = ()=>{
             </div>
           </div>
         </Link> : cardtype === "C" ?
-          <Link href={`/Products/${id}`} className="w-[265px] h-full flex flex-col rounded-[15px]">
+          <Link href={`/Home/Products/${id}`} className="w-[265px] h-full flex flex-col rounded-[15px]">
             {/* Card container */}
             <div className="bg-cover bg-center w-[330.5px] h-[305.1700134277344px] flex  justify-center z-10 rounded-[15px]" style={{ backgroundImage: `url(${img}` }}>
               {/* Card back image */}
@@ -147,7 +147,7 @@ const handleaddtocart = ()=>{
               </div>
             </div>
           </Link> : cardtype === "D" ?
-            <Link href={`/Products/${id}`} className="w-full h-full flex rounded-[15px] justify-center ">
+            <Link href={`/Home/Products/${id}`} className="w-full h-full flex rounded-[15px] justify-center ">
               {/* Card container */}
               <div className="size-[100px]">
                 {/* image */}
@@ -157,7 +157,7 @@ const handleaddtocart = ()=>{
                 {/* product card details */}
                 <div>
                   {/* title */}
-                  <p className="font-bold  w-[234.4600067138672px] text-base leading-5 tracking-normal align-middle font-quicksand text-[#253D4E]">{title}</p>
+                  <p className="font-bold sm:max-xl:w-[50%] min-[640px]:max-[649px]:w-[30%] sm:max-xl:flex sm:max-xl:flex-wrap w-[234.4600067138672px] text-base leading-5 tracking-normal align-middle font-quicksand text-[#253D4E]">{title}</p>
                 </div>
                 <div className="flex items-center">
                   {/* rating */}
@@ -180,7 +180,7 @@ const handleaddtocart = ()=>{
                 </div>
               </div>
             </Link> : cardtype === "E" ?
-              <Link href={`/Products/${id}`} className="sm:max-[734px]:w-[80%] sm:max-[734px]:h-130  my-10 w-[306px] h-[477px] items-center bg-[#FFFFFF] flex flex-col border border-[#E9E9E9] rounded-[5px]">
+              <Link href={`/Home/Products/${id}`} className="sm:max-[734px]:w-[80%] sm:max-[734px]:h-130  w-[306px] h-[477px] items-center bg-[#FFFFFF] flex flex-col border border-[#E9E9E9] rounded-[5px]">
                 {/* Card container */}
                 <div className="w-[280px] sm:max-[734px]:w-[80%]  h-[280px] border my-[13px] border-[#E9E9E9] rounded-[5px]">
                   {/* image container */}

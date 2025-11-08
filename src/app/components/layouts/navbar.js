@@ -13,20 +13,20 @@ export default function Navbar() {
 
     const navlinks = [{ url: "Home", path: "/Home" },
     {
-        name: "Category", category: [{ link: "Fresh Fruits", path: "//www.google.com" },
-        { link: "Imported Fruits", path: "//www.google.com" },
-        { link: "Organic Fruits", path: "//www.google.com" },
-        { link: "Seasonal Fruits", path: "//www.google.com" },
-        { link: "Dry Fruits", path: "//www.google.com" },
-        { link: "Fruit Boxes", path: "//www.google.com" },]
+        name: "Category", category: [{ link: "Fresh Fruits", path: "/Home/Products" },
+        { link: "Imported Fruits", path: "/Home/Products" },
+        { link: "Organic Fruits", path: "/Home/Products" },
+        { link: "Seasonal Fruits", path: "/Home/Products" },
+        { link: "Dry Fruits", path: "/Home/Products" },
+        { link: "Fruit Boxes", path: "/Home/Products" },]
     },
     {
         name: "Products", products: [{ link: "All Products", path: "/Home/Products" },
-        { link: "Best Sellers", path: "//www.google.com" },
-        { link: "New Arrivals", path: "//www.google.com" },
-        { link: "On Sale", path: "//www.google.com" },
-        { link: "Gift Packs", path: "//www.google.com" },
-        { link: "Combo Offers", path: "//www.google.com" },]
+        { link: "Best Sellers", path: "/Home/Products" },
+        { link: "New Arrivals", path: "/Home/Products" },
+        { link: "On Sale", path: "/Home/Products" },
+        { link: "Gift Packs", path: "/Home/Products" },
+        { link: "Combo Offers", path: "/Home/Products" },]
     },
     {
         name: "Pages", pages: [
@@ -35,7 +35,7 @@ export default function Navbar() {
             { link: "About Us", path: "/Home/Aboutus" },
             { link: "Our Blog", path: "/Home/Blog" },
             { link: "FAQ", path: "/Home/FAQ" },
-            { link: "Delivery Information", path: "//www.google.com" },]
+            { link: "Delivery Information", path: "/Home/FAQ" },]
     },
     {
         name: "Blog", blog: [{ link: "Healthy Eating Tips", path: "/Home/Blog" },
@@ -46,12 +46,12 @@ export default function Navbar() {
         { link: "Storage & Freshness Tips", path: "/Home/Blog" },]
     },
     {
-        name: "Elements", elements: [{ link: "Buttons", path: "//www.google.com" },
-        { link: "Icons", path: "//www.google.com" },
-        { link: "Pricing Tables", path: "//www.google.com" },
-        { link: "Testimonials Styles", path: "//www.google.com" },
-        { link: "Product Cards", path: "//www.google.com" },
-        { link: "Forms & Inputs", path: "//www.google.com" },]
+        name: "Elements", elements: [{ link: "Buttons", path: "/" },
+        { link: "Icons", path: "/" },
+        { link: "Pricing Tables", path: "/" },
+        { link: "Testimonials Styles", path: "/" },
+        { link: "Product Cards", path: "/" },
+        { link: "Forms & Inputs", path: "/" },]
     }];
 
 

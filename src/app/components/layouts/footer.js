@@ -13,7 +13,7 @@ export default function Footer() {
     const fruitimages = [{ fruit: "/material-photos/Footer/fruit.svg" }, { fruit: "/material-photos/Footer/fruit2.svg" }, { fruit: "/material-photos/Footer/fruit3.svg" }, { fruit: "/material-photos/Footer/fruit4.svg" }, { fruit: "/material-photos/Footer/fruit5.svg" }]
     // the fruit images in small boxes in the bottom fourth division or on the right bottom of the footer
     return (
-        <div className="bg-[#F7F7F8] size-full flex items-center min-sm:max-xl:flex-wrap">
+        <div className="bg-[#F7F7F8] border-t-[2px] border-[#E9E9E9] size-full flex items-center min-sm:max-xl:flex-wrap">
             {/* Main Footer Container */}
             <div className="flex items-center h-full w-[100px] min-sm:max-xl:flex-wrap min-sm:max-xl:w-full min-sm:max-xl:h-full min-sm:max-xl:justify-center">
                 {/* left Footer fruit image */}
@@ -64,7 +64,7 @@ export default function Footer() {
                         </div>
                         <div className="flex gap-[4px]">
                             {/* link icons */}
-                            {iconlinks.map((icons, index) => (<Link href={icons.url} key={index} className={`${ index === 0 ? "hover:bg-blue-600 transition-all duration-300 group:":""} ${ index === 1 ? "hover:bg-black transition-all duration-300 group":""} ${ index === 2 ? "hover:bg-blue-400  transition-all duration-300 group":""} ${index === 3 ? "transition-all duration-300 hover:bg-gradient-to-r hover:from-[#833ab4] hover:via-[#fd1d1d] hover:to-[#fcb045]":""} bg-white border-1 border-solid border-[#E1DFDF] w-[35px] h-[35px] rounded-[5px] flex justify-center group`}>
+                            {iconlinks.map((icons, index) => (<Link href={icons.url} key={index} className={`${ index === 0 ? "hover:bg-blue-600 transition-all duration-300 group:":""} ${ index === 1 ? "hover:bg-black transition-all duration-300 group":""} ${ index === 2 ? "hover:bg-blue-400  transition-all duration-300 group":""} ${index === 3 ? "transition-all duration-300 hover:bg-gradient-to-r hover:from-[#833ab4] hover:via-[#fd1d1d] hover:to-[#fcb045]":""} overflow-hidden bg-white border-1 border-solid border-[#E1DFDF] w-[35px] h-[35px] rounded-[5px] flex justify-center group`}>
                                 <Image src={icons.icon} alt="icon" width={icons.width} height={icons.height} className={`${ index === 0 ? "group-hover:invert-100 transition-all duration-300":""} ${ index === 1 ? "group-hover:invert-100 transition-all duration-300":""} ${ index === 3 ? "group-hover:invert-100 transition-all duration-300":"group-hover:invert-100 transition-all duration-300"} `}></Image>
                             </Link>))}
                         </div>

@@ -1,5 +1,6 @@
 'use client'
 import ButtonUI from "@/app/components/Ui/ButtonUI";
+import MultipleSelect from "@/app/components/Ui/MUISelect";
 import OrangeBannerUI from "@/app/components/Ui/OrangeBannerUI";
 import { CartContext } from "@/context/cartcontext";
 import Image from "next/image";
@@ -289,6 +290,7 @@ export default function Checkout() {
                                 <div className="flex flex-col gap-[9px] w-full">
                                     {/* City input */}
                                     <label htmlFor="city" className="font-poppins font-normal text-[15px] leading-[15px] tracking-[0%] align-middle text-[#444444]">City*</label>
+                                 {/* <MultipleSelect selecttype={"A"}></MultipleSelect> */}
                                     <input id="city" type="text" className="pl-3  outline-0 focus:outline outline-[#F53E32] w-full h-[41.380001068115234px] rounded-[5px] border border-solid border-[#E9E9E9] font-[Segoe_UI] font-normal text-[15px] leading-[15px] tracking-[0%] align-middle  " placeholder="City"></input>
                                 </div>
                                 <div className="flex flex-col gap-[9px] w-full">

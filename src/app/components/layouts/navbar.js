@@ -38,12 +38,12 @@ export default function Navbar() {
             { link: "Delivery Information", path: "//www.google.com" },]
     },
     {
-        name: "Blog", blog: [{ link: "Healthy Eating Tips", path: "//www.google.com" },
-        { link: "Fruit Recipes", path: "//www.google.com" },
-        { link: "Seasonal Fruit Guides", path: "//www.google.com" },
-        { link: "Benefits of Organic Fruits", path: "//www.google.com" },
-        { link: "Smoothie Ideas", path: "//www.google.com" },
-        { link: "Storage & Freshness Tips", path: "//www.google.com" },]
+        name: "Blog", blog: [{ link: "Healthy Eating Tips", path: "/Home/Blog" },
+        { link: "Fruit Recipes", path: "/Home/Blog" },
+        { link: "Seasonal Fruit Guides", path: "/Home/Blog" },
+        { link: "Benefits of Organic Fruits", path: "/Home/Blog" },
+        { link: "Smoothie Ideas", path: "/Home/Blog" },
+        { link: "Storage & Freshness Tips", path: "/Home/Blog" },]
     },
     {
         name: "Elements", elements: [{ link: "Buttons", path: "//www.google.com" },
@@ -143,7 +143,7 @@ export default function Navbar() {
                         <div key={index} >
                             {/* page links title */}
                             {link.path ? (<Link href={link.path} className="hover:text-[#F53E32] transition-all ease-in-out font-poppins flex font-[600] text-[14px] leading-[21px] tracking-[0.48px] align-middle">
-                                {link.url} </Link>) : (<button onMouseEnter={() => { setdropdownmenu(dropdownmenu === link.name ? null : link.name) }} className="hover:text-[#F53E32] transition-all cursor-pointer ease-in-out font-poppins flex font-[600] text-[14px] leading-[21px] tracking-[0.48px] align-middle">
+                                {link.url} </Link>) : (<button onClick={() => { setdropdownmenu(dropdownmenu === link.name ? null : link.name) }} className="hover:text-[#F53E32] transition-all cursor-pointer ease-in-out font-poppins flex font-[600] text-[14px] leading-[21px] tracking-[0.48px] align-middle">
                                     {link.name}<Image id="arrow" src="/material-photos/Navbar/Expand_down.svg" className={`${dropdownmenu === link.name ? "rotate-180 transition-all duration-300" : "rotate-0 transition-all duration-300"}`} width={18} height={17} alt="arrowdown"></Image></button>)}
                             {Object.entries(link).map(([key, value]) => {
                                 if (Array.isArray(value)) {

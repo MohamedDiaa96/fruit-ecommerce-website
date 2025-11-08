@@ -64,7 +64,7 @@ export default function Navbar() {
         function handleClickOutside(e) {
             if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
                 setdropdownmenusidebar(null)
-                setdropdownmenu(null)
+                // setdropdownmenu(null)
                 setfiltereditem([])
             }
         }
@@ -148,7 +148,7 @@ export default function Navbar() {
                             {Object.entries(link).map(([key, value]) => {
                                 if (Array.isArray(value)) {
                                     return (
-                                        <div key={key} ref={dropdownRef} className={`flex flex-col w-[150px] border-1 border-[#0000004f] rounded-lg overflow-hidden h-fit bg-white shadow-lg z-30 absolute transform transition-transform duration-300 translate-y-1 visible translate-x-[-10px] ${dropdownmenu === link.name ? " scale-y-100 visible origin-top max-h-fit" : " scale-y-0 invisible origin-top"} `}>
+                                        <div key={key}  className={`flex flex-col w-[150px] border-1 border-[#0000004f] rounded-lg overflow-hidden h-fit bg-white shadow-lg z-30 absolute transform transition-transform duration-300 translate-y-1 visible translate-x-[-10px] ${dropdownmenu === link.name ? " scale-y-100 visible origin-top max-h-fit" : " scale-y-0 invisible origin-top"} `}>
                                             {/* drop down menu  */}
                                             {value.map((item, index) => (<Link className="border-1 border-[#0000004f] pl-2 hover:bg-[#F53E32]  hover:text-white font-poppins  font-[600] text-[14px] leading-[21px] tracking-[0.48px] align-middle" key={index} href={item.path}>{item.link}</Link>))}
                                             {/* drop down links */}

@@ -105,11 +105,11 @@ export default function Navbar() {
     }, [searchterm, selectedcategory])
     return (
         <div>
-            <div className="flex items-center h-[9vh] w-[100%] shadow-[0px_0px_5px_0px] shadow-[#0000003f] min-sm:max-[738px]:gap-10 min-sm:max-xl:flex-wrap min-sm:max-xl:h-[100%] min-sm:max-xl:w-[100%] min-sm:max-xl:items-center min-sm:max-xl:justify-center min-sm:max-xl:flex-col">
+            <div className="flex items-center h-[9vh] w-full shadow-[0px_0px_5px_0px] shadow-[#0000003f] min-sm:max-[738px]:gap-10 min-sm:max-xl:flex-wrap min-sm:max-xl:h-[100%] min-sm:max-xl:w-[100%] min-sm:max-xl:items-center min-sm:max-xl:justify-center min-sm:max-xl:flex-col">
                 {/* upper navbar */}
                 <div className="flex items-center h-[10vh] w-[10%] ml-[212px] min-sm:max-xl:ml-0 min-sm:max-xl:w-[100%] min-sm:max-xl:flex-wrap min-sm:max-xl:justify-center">
                     {/* left upper of navbar - navbar menu button */}
-                    <button onClick={() => { setopensidebar(true) }}><Image src="/material-photos/Navbar/div.cr-category-toggle.svg" alt="category" width={35} height={35} className="cursor-pointer w-auto h-auto rounded-md hover:bg-green-400"></Image></button>
+                    <button onClick={() => { setopensidebar(true) }}><Image src="/material-photos/Navbar/div.cr-category-toggle.svg" alt="category" width={35} height={35} className="cursor-pointer w-auto h-auto rounded-md hover:bg-green-400 active:bg-green-400"></Image></button>
                     {opensidebar && (<div onClick={() => setopensidebar(false)} className="fixed inset-0 backdrop-blur-sm bg-black/30 z-40"></div>)}
                     {/* blur effect when opening sidebar */}
                     <div className={`w-[250px] h-screen gap-3 bg-white shadow-lg z-50 fixed top-0 left-0 flex flex-col p-5 transform transition-transform duration-300 ${opensidebar ? "translate-x-0" : "-translate-x-full"}`}>
@@ -118,8 +118,8 @@ export default function Navbar() {
                         {navlinks.map((link, index) => (
                             <div key={index} className="flex w-fit ml-17 gap-1" >
                                 {/* page links title */}
-                                {link.path ? (<Link href={link.path} className="hover:text-[#F53E32] gap-10 transition-all ease-in-out font-poppins flex font-[600] text-[14px] leading-[21px] tracking-[0.48px] align-middle">
-                                    {link.url} </Link>) : (<button onMouseEnter={() => { setdropdownmenusidebar(dropdownmenusidebar === link.name ? null : link.name) }} className="hover:text-[#F53E32] transition-all cursor-pointer ease-in-out font-poppins flex font-[600] text-[14px] leading-[21px] tracking-[0.48px] align-middle">
+                                {link.path ? (<Link href={link.path} className="hover:text-[#F53E32] active:text-[#F53E32] gap-10 transition-all ease-in-out font-poppins flex font-[600] text-[14px] leading-[21px] tracking-[0.48px] align-middle">
+                                    {link.url} </Link>) : (<button onClick={() => { setdropdownmenusidebar(dropdownmenusidebar === link.name ? null : link.name) }} onMouseEnter={() => { setdropdownmenusidebar(dropdownmenusidebar === link.name ? null : link.name) }} className="hover:text-[#F53E32] active:text-[#F53E32] transition-all cursor-pointer ease-in-out font-poppins flex font-[600] text-[14px] leading-[21px] tracking-[0.48px] align-middle">
                                         {link.name}<Image src="/material-photos/Navbar/Expand_down.svg" className={`${dropdownmenusidebar === link.name ? "rotate-90 transition-all duration-300" : "rotate-270 transition-all duration-300"}`} width={18} height={17} alt="arrowdown"></Image></button>)}
                                 <div className="flex h-fit">
                                     {/* sidebar drop down menu position */}
@@ -128,7 +128,7 @@ export default function Navbar() {
                                             return (
                                                 <div key={key} ref={dropdownRef} className={`${dropdownmenusidebar === link.name ? " fixed scale-x-100 visible origin-left max-h-fit opacity-100 border-1 border-[#0000004f] rounded-lg overflow-hidden flex flex-col transform transition-transform duration-300 w-[150px] bg-white shadow-lg z-30 " : " fixed w-[150px] bg-white shadow-lg z-30 transform transition-transform duration-300 flex flex-col opacity-100 scale-x-0 visible max-h-0 origin-left"} `}>
                                                     {/* drop down menu  */}
-                                                    {value.map((item, index) => (<Link className=" pl-2 hover:bg-[#F53E32] hover:text-white font-poppins border-1 border-[#0000004f] font-[600] text-[14px]  leading-[21px] tracking-[0.48px] align-middle" key={index} href={item.path}>{item.link}</Link>))}
+                                                    {value.map((item, index) => (<Link className=" pl-2 hover:bg-[#F53E32] active:text-[#F53E32] hover:text-white active:text-white font-poppins border-1 border-[#0000004f] font-[600] text-[14px]  leading-[21px] tracking-[0.48px] align-middle" key={index} href={item.path}>{item.link}</Link>))}
                                                     {/* drop down links */}
                                                 </div>)
                                         }
@@ -142,15 +142,15 @@ export default function Navbar() {
                     {navlinks.map((link, index) => (
                         <div key={index} >
                             {/* page links title */}
-                            {link.path ? (<Link href={link.path} className="hover:text-[#F53E32] transition-all ease-in-out font-poppins flex font-[600] text-[14px] leading-[21px] tracking-[0.48px] align-middle">
-                                {link.url} </Link>) : (<button onClick={() => { setdropdownmenu(dropdownmenu === link.name ? null : link.name) }} className="hover:text-[#F53E32] transition-all cursor-pointer ease-in-out font-poppins flex font-[600] text-[14px] leading-[21px] tracking-[0.48px] align-middle">
+                            {link.path ? (<Link href={link.path} className="hover:text-[#F53E32]  active:text-[#F53E32]transition-all ease-in-out font-poppins flex font-[600] text-[14px] leading-[21px] tracking-[0.48px] align-middle">
+                                {link.url} </Link>) : (<button onClick={() => { setdropdownmenu(dropdownmenu === link.name ? null : link.name) }} className="hover:text-[#F53E32] active:text-[#F53E32] transition-all cursor-pointer ease-in-out font-poppins flex font-[600] text-[14px] leading-[21px] tracking-[0.48px] align-middle">
                                     {link.name}<Image id="arrow" src="/material-photos/Navbar/Expand_down.svg" className={`${dropdownmenu === link.name ? "rotate-180 transition-all duration-300" : "rotate-0 transition-all duration-300"}`} width={18} height={17} alt="arrowdown"></Image></button>)}
                             {Object.entries(link).map(([key, value]) => {
                                 if (Array.isArray(value)) {
                                     return (
                                         <div key={key}  className={`flex flex-col w-[150px] border-1 border-[#0000004f] rounded-lg overflow-hidden h-fit bg-white shadow-lg z-30 absolute transform transition-transform duration-300 translate-y-1 visible translate-x-[-10px] ${dropdownmenu === link.name ? " scale-y-100 visible origin-top max-h-fit" : " scale-y-0 invisible origin-top"} `}>
                                             {/* drop down menu  */}
-                                            {value.map((item, index) => (<Link className="border-1 border-[#0000004f] pl-2 hover:bg-[#F53E32]  hover:text-white font-poppins  font-[600] text-[14px] leading-[21px] tracking-[0.48px] align-middle" key={index} href={item.path}>{item.link}</Link>))}
+                                            {value.map((item, index) => (<Link className="border-1 border-[#0000004f] pl-2 hover:bg-[#F53E32] active:text-[#F53E32] active:text-white hover:text-white font-poppins  font-[600] text-[14px] leading-[21px] tracking-[0.48px] align-middle" key={index} href={item.path}>{item.link}</Link>))}
                                             {/* drop down links */}
 
                                         </div>)
@@ -177,7 +177,7 @@ export default function Navbar() {
                         <div className="flex flex-col">
                             <input type="text" onChange={(e) => { setsearchterm(e.target.value) }} value={searchterm} placeholder={`Search For ${selectedcategory}...`} className="min-sm:max-xl:w-[500px] min-sm:max-xl:placeholder:text-[13px] h-full w-[350px] border-[#64B496] shadow-[#64B496] shadow-[0px_0px_0.5px_0px] placeholder:font-poppins flex placeholder:font-normal placeholder:text-xs placeholder:tracking-normal placeholder:align-middle outline-0 px-5 border-1 rounded-l-[5px]"></input>
                             {filtereditem.length > 0 && (<div className="bg-white max-h-[252px] w-fit  origin-top rounded-lg shadow-lg absolute mt-10 border border-[#0000004f] z-30 overflow-y-auto">
-                                {filtereditem.map((p) => (<Link key={p.id} href={`/Products/${p.id}`} className="hover:bg-[#F53E32] pr-5 gap-2 items-center hover:text-white border border-[#0000004f] flex">
+                                {filtereditem.map((p) => (<Link key={p.id} href={`/Products/${p.id}`} className="hover:bg-[#F53E32] active:bg-[#F53E32] pr-5 gap-2 items-center  active:text-white hover:text-white border border-[#0000004f] flex">
                                     <Image src={p.img} width={40} height={40} alt={p.title} className="rounded-lg "></Image>
                                     <span>{p.title}</span>
                                 </Link>))}
@@ -186,17 +186,17 @@ export default function Navbar() {
                         </div>
                         <div className="flex flex-col items-center justify-center relative">
                             <button className="min-sm:max-xl:w-[200px] min-sm:max-xl:text-[15px] h-[45px] w-[130px] border-[#64B496] shadow-[#64B496] shadow-[0px_0px_0.5px_0px] font-normal text-xs leading-5 tracking-normal align-middle flex items-center justify-center border-b-1 border-t-1 gap-2 cursor-pointer" onClick={() => { setshowsearchcategory(!showsearchcategory) }}>{selectedcategory}<Image className={`${showsearchcategory ? "rotate-180 transition-all duration-300" : "rotate-0 transition-all duration-300"} min-sm:max-xl:w-[19px] min-sm:max-xl:h-[19px]`} alt="arrowdown" width={16} height={16} src="/material-photos/Navbar/Expand_down.svg"></Image></button>
-                            <div className={`${!showsearchcategory === false ? "transform transition-all duration-300 scale-y-100 visible max-h-fit origin-top" : " transform transition-all scale-y-0 duration-300 invisible  origin-top"} absolute top-full mt-1 w-[130px] bg-white border border-[#64B496] shadow-md rounded-md flex flex-col z-50 `} >{categories.map((filteritems, index) => (<button key={index} className="py-1 px-2 cursor-pointer hover:bg-[#64B496] hover:text-white text-sm" onClick={() => { setselectedcategory(filteritems); setshowsearchcategory(false); }}>{filteritems}</button>))}</div>
+                            <div className={`${!showsearchcategory === false ? "transform transition-all duration-300 scale-y-100 visible max-h-fit origin-top" : " transform transition-all scale-y-0 duration-300 invisible  origin-top"} absolute top-full mt-1 w-[130px] bg-white border border-[#64B496] shadow-md rounded-md flex flex-col z-50 `} >{categories.map((filteritems, index) => (<button key={index} className="py-1 px-2 cursor-pointer hover:bg-[#64B496] active:bg-[#64B496] active:text-white hover:text-white text-sm" onClick={() => { setselectedcategory(filteritems); setshowsearchcategory(false); }}>{filteritems}</button>))}</div>
                         </div>
                         <button className="min-sm:max-xl:w-[65px] bg-[#F53E32] w-[45px] h-[45px] opacity-100 rounded-tr-[5px] rounded-br-[5px] flex justify-center items-center cursor-pointer"><Image src="/material-photos/Navbar/Vector5.svg" alt="Searchicon" className="min-sm:max-xl:w-[18px] min-sm:max-xl:h-[18px]" width={14} height={14} ></Image></button>
                     </div>
                 </div>
                 <div className="flex justify-center min-sm:max-xl:items-center min-sm:max-xl:w-full gap-8 min-sm:max-xl:h-[20%]">
                     {/* right bottom navbar - account,wishlist,Cart */}
-                    {navinternallinks.map((internallinks, index) => (<div key={index} className="flex text-[15px] font-poppins font-[500] group  hover:text-[#F53E32] transition-all duration-200  ">
+                    {navinternallinks.map((internallinks, index) => (<div key={index} className="flex text-[15px] font-poppins font-[500] group active:text-[#F53E32] hover:text-[#F53E32] transition-all duration-200  ">
                         {/* account,wishlist,Cart div box */}
                         <Link href={internallinks.url}><div className="flex gap-2 items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="..." style={{ width: internallinks.width, height: internallinks.height }} className="fill-black group-hover:fill-[#F53E32] transition-all duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="..." style={{ width: internallinks.width, height: internallinks.height }} className="fill-black group-hover:fill-[#F53E32] group-active:fill-[#F53E32] transition-all duration-300">
                                 <path d={internallinks.path}></path>
                             </svg>
                             <span >{internallinks.text}</span>

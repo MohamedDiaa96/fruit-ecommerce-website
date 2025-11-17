@@ -61,7 +61,7 @@ export default function Productdetails() {
           {/* product details container */}
           <div className="flex sm:max-xl:flex-col">
             {/* product image and text container */}
-            <div className="flex flex-col sm:max-[958px]:items-center">
+            <div className="flex flex-col sm:max-xl:items-center">
               {/* product images container */}
               <div className="pt-[100px] flex sm:max-[958px]:justify-center ">
                 {/* main product image */}

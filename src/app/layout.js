@@ -5,6 +5,7 @@ import Footer from "./components/layouts/footer";
 import { CartProvider } from "@/context/cartcontext";
 import { Toaster } from "react-hot-toast";
 import { FilterProvider } from "@/context/filtercontext";
+import { AccountProvider } from "@/context/accountcontext";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -62,7 +63,9 @@ export default function RootLayout({ children }) {
         <CartProvider>
           <FilterProvider>
             <Toaster position="top-right" reverseOrder={false} />
+            <AccountProvider>
             {children}
+            </AccountProvider>
           </FilterProvider>
         </CartProvider>
         <Footer></Footer>

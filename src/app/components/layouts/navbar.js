@@ -128,7 +128,7 @@ export default function Navbar() {
                                             return (
                                                 <div key={key} ref={dropdownRef} className={`${dropdownmenusidebar === link.name ? " fixed scale-x-100 visible origin-left max-h-fit opacity-100 border-1 border-[#0000004f] rounded-lg overflow-hidden flex flex-col transform transition-transform duration-300 w-[150px] bg-white shadow-lg z-30 " : " fixed w-[150px] bg-white shadow-lg z-30 transform transition-transform duration-300 flex flex-col opacity-100 scale-x-0 visible max-h-0 origin-left"} `}>
                                                     {/* drop down menu  */}
-                                                    {value.map((item, index) => (<Link className=" pl-2 hover:bg-[#F53E32] min-sm:max-xl:focus:text-[#F53E32] hover:text-white min-sm:max-xl:focus:text-white font-poppins border-1 border-[#0000004f] font-[600] text-[14px]  leading-[21px] tracking-[0.48px] align-middle" key={index} href={item.path}>{item.link}</Link>))}
+                                                    {value.map((item, index) => (<Link className=" pl-2 hover:bg-[#F53E32] min-sm:max-xl:focus:bg-[#F53E32] hover:text-white min-sm:max-xl:focus:text-white font-poppins border-1 border-[#0000004f] font-[600] text-[14px]  leading-[21px] tracking-[0.48px] align-middle" key={index} href={item.path}>{item.link}</Link>))}
                                                     {/* drop down links */}
                                                 </div>)
                                         }
@@ -150,7 +150,7 @@ export default function Navbar() {
                                     return (
                                         <div key={key}  className={`flex flex-col w-[150px] border-1 border-[#0000004f] rounded-lg overflow-hidden h-fit bg-white shadow-lg z-30 absolute transform transition-transform duration-300 translate-y-1 visible translate-x-[-10px] ${dropdownmenu === link.name ? " scale-y-100 visible origin-top max-h-fit" : " scale-y-0 invisible origin-top"} `}>
                                             {/* drop down menu  */}
-                                            {value.map((item, index) => (<Link className="border-1 border-[#0000004f] pl-2 hover:bg-[#F53E32] min-sm:max-xl:focus:text-[#F53E32] min-sm:max-xl:focus:text-white hover:text-white font-poppins  font-[600] text-[14px] leading-[21px] tracking-[0.48px] align-middle" key={index} href={item.path}>{item.link}</Link>))}
+                                            {value.map((item, index) => (<Link className="border-1 border-[#0000004f] pl-2 hover:bg-[#F53E32] min-sm:max-xl:focus:bg-[#F53E32] min-sm:max-xl:focus:text-white hover:text-white font-poppins  font-[600] text-[14px] leading-[21px] tracking-[0.48px] align-middle" key={index} href={item.path}>{item.link}</Link>))}
                                             {/* drop down links */}
 
                                         </div>)

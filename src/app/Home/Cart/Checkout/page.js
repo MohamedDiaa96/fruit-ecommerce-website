@@ -61,7 +61,7 @@ export default function Checkout() {
                                     Number(productpriceaddition)
                                 ).toFixed(2)}</span>
                             </div>
-                            <div className="flex flex-col h-50 gap-5 overflow-y-auto over">
+                            <div className="flex flex-col h-60 gap-5 overflow-y-auto over">
                                 {/* checkedout items container  */}
 
                                 {cartitems.map((item) => (<div key={item.id} className="flex h-full gap-[15px] ">

@@ -1,5 +1,6 @@
 'use client'
 
+import { useRouter } from "next/navigation"
 import { createContext, useEffect, useState } from "react"
 
 export const AccountContext = createContext()
@@ -16,15 +17,17 @@ export function AccountProvider({ children }) {
     const [confirmpassword, setconfirmpassword] = useState()
     const [address, setaddress] = useState()
     const [postcode, setpostcode] = useState()
+    const [justregistered, setjustregistered] = useState(false)
+    const router = useRouter()
 
+    const adduser = (prev) => {
 
-    const accountdataarray = (prev) => {
         if (firstname?.length >= 3 &&
             lastname?.length >= 3 &&
             email.includes("@") && email.includes(".com") &&
             phone?.length === 11 &&
             password?.length >= 8 && password === confirmpassword &&
-            address?.length > 0
+            address?.length > 5 && postcode?.length === 2
         ) {
             setaccountdata([...prev, {
                 firstname: firstname,
@@ -36,12 +39,11 @@ export function AccountProvider({ children }) {
                 address: address,
                 postcode: Number(postcode)
             }])
-
-
-
         } else {
             return prev
         }
+        setjustregistered(true)
+
     }
     useEffect(() => {
         const savedaccountdata = localStorage.getItem("accountdata")
@@ -51,6 +53,9 @@ export function AccountProvider({ children }) {
     }, [])
     useEffect(() => {
         localStorage.setItem("accountdata", JSON.stringify(accountdata))
+        if (justregistered && accountdata.length > 0) {
+            router.push("/Home/Registeration/Reroutepage");
+        }
     }, [accountdata])
 
 
@@ -64,7 +69,7 @@ export function AccountProvider({ children }) {
     return (
         <AccountContext.Provider value={{
             accountdata, setaccountdata,
-            accountdataarray,
+            adduser,
             firstname, setfirstname,
             lastname, setlastname,
             email, setemail,

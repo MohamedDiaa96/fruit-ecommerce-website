@@ -8,7 +8,7 @@ import { AccountContext } from "@/context/accountcontext";
 
 export default function Login() {
     const { accountdata, setaccountdata,
-        accountdataarray,
+        adduser,
         firstname, setfirstname,
         lastname, setlastname,
         email, setemail,

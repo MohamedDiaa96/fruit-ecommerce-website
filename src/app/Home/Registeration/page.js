@@ -6,14 +6,12 @@ import Link from "next/link";
 import ButtonUI from "@/app/components/Ui/ButtonUI";
 import { useContext, useEffect } from "react";
 import { AccountContext } from "@/context/accountcontext";
-import { useRouter } from "next/navigation";
 
 export default function Registeration() {
 
-    const router = useRouter()
 
     const { accountdata, setaccountdata,
-        accountdataarray,
+        adduser,
         firstname, setfirstname,
         lastname, setlastname,
         email, setemail,
@@ -40,7 +38,7 @@ export default function Registeration() {
                         <div className="flex flex-col gap-[9px]">
                             {/* first name input */}
                             <label htmlFor="firstname" className=" font-poppins font-normal text-[15px] leading-[15px] tracking-[0%] align-middle text-[#444444]">First Name*</label>
-                            <input value={firstname} onChange={(e) => { setfirstname(e.target.value); }} id="firstname" type="text" className={`${firstname && firstname?.length < 3 ? "pl-3 outline-0 focus:outline outline-red-600 w-[257px] h-[41.380001068115234px] rounded-[5px] border border-solid border-red-600 font-[Segoe_UI] font-normal text-[15px] leading-[15px] tracking-[0%] align-middle" : "pl-3 outline-0 focus:outline outline-[#fb9518] w-[257px] h-[41.380001068115234px] rounded-[5px] border border-solid border-[#E9E9E9] font-[Segoe_UI] font-normal text-[15px] leading-[15px] tracking-[0%] align-middle"}`} placeholder="Enter Your First Name"></input>
+                            <input value={firstname} required onChange={(e) => { setfirstname(e.target.value); }} id="firstname" type="text" className={`${firstname && firstname?.length < 3 ? "pl-3 outline-0 focus:outline outline-red-600 w-[257px] h-[41.380001068115234px] rounded-[5px] border border-solid border-red-600 font-[Segoe_UI] font-normal text-[15px] leading-[15px] tracking-[0%] align-middle" : "pl-3 outline-0 focus:outline outline-[#fb9518] w-[257px] h-[41.380001068115234px] rounded-[5px] border border-solid border-[#E9E9E9] font-[Segoe_UI] font-normal text-[15px] leading-[15px] tracking-[0%] align-middle"}`} placeholder="Enter Your First Name"></input>
                             {firstname && firstname?.length < 3 ? (<div><p className="text-red-600">must contain 3 character at least</p></div>) : ""}
                         </div>
                         <div className="flex flex-col gap-[9px]">
@@ -85,8 +83,8 @@ export default function Registeration() {
                     <div className="flex flex-col gap-[9px] my-4">
                         {/* Address input */}
                         <label htmlFor="address" className="font-poppins font-normal text-[15px] leading-[15px] tracking-[0%] align-middle text-[#444444]" >Address*</label>
-                        <input id="address" value={address} type="text" onChange={(e) => { setaddress(e.target.value); }} className={`${address && address?.length === 0 ? "pl-3 outline-0 focus:outline outline-red-600 w-[538px] h-[41.380001068115234px] rounded-[5px] border border-solid border-red-600 font-[Segoe_UI] font-normal text-[15px] leading-[15px] tracking-[0%] align-middle" : "pl-3 outline-0 focus:outline outline-[#FB9518] w-[538px] h-[41.380001068115234px] rounded-[5px] border border-solid border-[#E9E9E9] font-[Segoe_UI] font-normal text-[15px] leading-[15px] tracking-[0%] align-middle"}`} placeholder="Address"></input>
-                        {address?.length === 0 && (<div><p className="text-red-600">Address Must Be Added</p></div>)}
+                        <input id="address" value={address} type="text" onChange={(e) => { setaddress(e.target.value); }} className={`${address && address?.length < 5 ? "pl-3 outline-0 focus:outline outline-red-600 w-[538px] h-[41.380001068115234px] rounded-[5px] border border-solid border-red-600 font-[Segoe_UI] font-normal text-[15px] leading-[15px] tracking-[0%] align-middle" : "pl-3 outline-0 focus:outline outline-[#FB9518] w-[538px] h-[41.380001068115234px] rounded-[5px] border border-solid border-[#E9E9E9] font-[Segoe_UI] font-normal text-[15px] leading-[15px] tracking-[0%] align-middle"}`} placeholder="Address"></input>
+                        {address && address?.length < 5 && (<div><p className="text-red-600">Address Must Be Added</p></div>)}
                     </div>
                     <div className="flex py-2 gap-6">
                         {/* City and Post Code container */}
@@ -118,7 +116,7 @@ export default function Registeration() {
                     <div className="w-[562px] h-10 flex items-center py-7 justify-between">
                         {/* signup button and account login button */}
                         <ButtonUI buttontype={"A"} onclick={() => {
-                            setaccountdata(accountdataarray);
+                            setaccountdata(adduser);
                             setfirstname("")
                             setlastname("")
                             setemail("")
@@ -127,9 +125,6 @@ export default function Registeration() {
                             setconfirmpassword("")
                             setaddress("")
                             setpostcode("")
-                            setTimeout(() => {
-                                router.push("/Home/Registeration/Reroutepage")
-                            }, 3000);
                         }} text={"Sign Up"} className={"relative group w-[89.44000244140625px] cursor-pointer overflow-hidden h-[40px] rounded-[5px] bg-[#F53E32] font-manrope flex items-center justify-center text-white font-bold text-[14px] leading-[16.8px] tracking-[0%] text-center align-middle capitalize"} />
                         <Link href={"/Home/Login"} className=" hover:underline segoeui font-normal text-[16px] mr-5 text-[#777777] leading-6 tracking-[0.48px] text-center align-middle">Have an account?</Link>
                    {/* <button onClick={()=>{console.log(accountdata);  }}>button</button> */}
